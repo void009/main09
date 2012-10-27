@@ -1,0 +1,8 @@
+1. compress all the images above 1 MB to around a 120 kB.
+
+2. Compress Javascript files.
+
+3. Edited the index.html file to remove the redundant images.
+
+4. Edited the repeated calling of same thing - several times without use.
+
