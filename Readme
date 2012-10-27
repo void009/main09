@@ -1,0 +1,67 @@
+Introduction to Github
+
+We will be using github for accepting all the answer files for this round. 
+If you know github, well and good! If not, learn it now! take it as an opportunity to learn about this 
+awesome version control system. Google is God!and Wikipedia is not far behind. Feel free to take their help.
+
+
+For this round we expect you to just use very basic commands like clone, push , commit the changes.
+
+Git is installed on your system and all you need is to learn the basics.
+
+NOTE: Your final score will be evaluated on the basis of the code that is present in  your repository
+at the end of the Round 3. 
+ We recommend you to do a bit of your own research online. If you are unable to upload your code,
+you can always take our help. But that will come at the cost of your score points. Make a choice.
+
+Good Luck!
+
+ 
+
+To help you get started, please read the following.
+
+Checking the status
+
+Initially you start off by writing code/answers to a particular question, then you can check
+whether your local git is sensing the change or not by a command called
+
+git status #=> Tells you about the status of the current repository
+
+Committing the changes
+
+If you have made changes to any of your file, then it’s time to let your local git know that you
+have made these changes. This can be achieved by the following code –
+
+#=> Telling git to add from current path (Use this command in main
+
+repository folder which is given to you)
+
+git commit –am ‘any message here’
+
+Pushing it online
+
+When you are done with above steps, please check your repository status again and if there
+is nothing to commit then it means you are ready to push your local git repo to online github
+account. This can be achieved by the following command -
+
+git push origin master
+
+Now you may go to your github account and check whether the changes have been achieved or not.
+
+#=> This is to finally store the changes in local git
+
+There will be an instance when you change your operating system/computer. Then How do
+change the updated repository? It’s easy, all you need to do it clone it in your local system by the
+following command –
+
+git clone github_link
+
+Note : github_link is of form https://github.com/username/repo_name.git 
+
+This will clone your repository online in your local system and again you can continue with your
+development.   
+
+
+
+
+
