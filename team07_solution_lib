@@ -1,0 +1,23 @@
+1 . gcc -c -fPIC foo.c -o foo.o
+
+this command is to create path independent object file for the c implementation of the inteface. A path independent object file is needed for us to be able to execute from any directory in future 	 
+
+
+2.gcc -shared -o libfoo.so foo.o
+
+Then we create a shared library object file so that it can be linked with other programs to form executables.
+
+
+
+3. export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/Desktop/marathon/lib
+We have to append a new directory to the existing paths then add the directories separated by colons to environment variable "LD_LIBRARY_PATH". 
+
+
+4. gcc -o test main.c -l foo -L /home/Desktop/marathon/lib
+This command compiles the program by linking to the library foo.
+     -l option tells the compiler to look for a file named libsomething.so The something is specified by the argument immediately following the “-l”.
+
+    -L option tells the compiler where to find the library. The path to the directory containing the shared libraries is followed by "-L". If no “-L” is specified, the compiler will search the usual locations. "-L." means looking for the shared libraries in the current directory and "-L/home/cf/lib" means looking for the shared libraries at "/opt/lib" path. You can specify as many “-l” and “-L” options as you like.
+
+
+
